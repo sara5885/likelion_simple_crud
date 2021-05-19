@@ -1,0 +1,7 @@
+<form action="{% url 'create_post' %}" method="POST">
+    <input type="text" name="title">
+    <textarea name="body">
+    </textarea>
+    {%csrf_token%}
+    <button type="submit">저장</button>
+</form>

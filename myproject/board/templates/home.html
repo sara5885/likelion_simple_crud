@@ -1,0 +1,6 @@
+
+{% for article in data %}
+<a href="{% url 'read_post' article.id%}">
+<p>{{article.title}}</p>
+</a>
+{% endfor %}
